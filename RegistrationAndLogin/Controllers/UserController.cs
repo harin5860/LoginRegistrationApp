@@ -182,9 +182,9 @@ namespace RegistrationAndLogin.Controllers
             var verifyUrl = "/User/VerifyAccount/" + activationCode;
             var link = Request.Url.AbsoluteUri.Replace(Request.Url.PathAndQuery, verifyUrl);
 
-            var fromEmail = new MailAddress("harish8925@gmail.com", "Harish");
+            var fromEmail = new MailAddress("test@gmail.com", "Name");
             var toEmail = new MailAddress(emailID);
-            var fromEmailPassword = "Siddharth8925"; // Replace with actual password
+            var fromEmailPassword = "******"; // Replace with actual password
             string subject = "Your account is successfully created!";
 
             string body = "<br/><br/>We are excited to tell you that your account is" + 
